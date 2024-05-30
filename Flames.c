@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 void removeMatchedCharacters(char* str1, char* str2) {
     for (int i = 0; i < strlen(str1); i++) {
         for (int j = 0; j < strlen(str2); j++) {
@@ -12,7 +11,6 @@ void removeMatchedCharacters(char* str1, char* str2) {
         }
     }
 }
-
 int countRemainingCharacters(char* str1, char* str2) {
     int count = 0;
     for (int i = 0; i < strlen(str1); i++) {
@@ -23,7 +21,6 @@ int countRemainingCharacters(char* str1, char* str2) {
     }
     return count;
 }
-
 const char* flamesResult(int count) {
     char flames[] = "FLAMES";
     int len = strlen(flames);
@@ -48,7 +45,6 @@ const char* flamesResult(int count) {
 
     return "";
 }
-
 int main() {
     char name1[100], name2[100];
     printf("Enter the first name: ");
